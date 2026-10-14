@@ -7,6 +7,7 @@ The application is built with .NET 10 and includes automated xUnit tests.
 ## Requirements
 
 - .NET 10 SDK
+- Visual Studio
 
 ## Features
 
@@ -24,11 +25,31 @@ The application is built with .NET 10 and includes automated xUnit tests.
 
 ## Run the application
 
+### Visual Studio
+
 Open the solution in Visual Studio and press the green **Play** button.
+
+### Terminal
+
+From the repository root:
+
+```bash
+dotnet run --project src/BookingSystem
+```
 
 ## Run the tests
 
+### Visual Studio
+
 Open **Test Explorer** in Visual Studio and select **Run All Tests**.
+
+### Terminal
+
+From the repository root:
+
+```bash
+dotnet test
+```
 
 All provided automated tests should pass.
 
@@ -40,8 +61,6 @@ The application reads and writes booking data through the file repository.
 
 ## Debugging report
 
-A debugging report is available in:
-
-DEBUGGING.md
+The full debugging report is available in `DEBUGGING.md`.
 
 The report describes how the booking overlap validation bug was investigated and fixed.
